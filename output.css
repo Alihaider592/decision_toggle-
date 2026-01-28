@@ -877,6 +877,41 @@ body {
   top: -5px;
 }
 
+.before\:left-\[-2px\]::before {
+  content: var(--tw-content);
+  left: -2px;
+}
+
+.before\:left-\[-1px\]::before {
+  content: var(--tw-content);
+  left: -1px;
+}
+
+.before\:left-\[-0px\]::before {
+  content: var(--tw-content);
+  left: -0px;
+}
+
+.before\:left-\[5px\]::before {
+  content: var(--tw-content);
+  left: 5px;
+}
+
+.before\:left-\[-5px\]::before {
+  content: var(--tw-content);
+  left: -5px;
+}
+
+.before\:left-\[-4px\]::before {
+  content: var(--tw-content);
+  left: -4px;
+}
+
+.before\:top-\[-4\.5px\]::before {
+  content: var(--tw-content);
+  top: -4.5px;
+}
+
 .before\:z-10::before {
   content: var(--tw-content);
   z-index: 10;
@@ -976,14 +1011,39 @@ body {
   background-image: url('WhatsApp_Image_2026-01-28_at_1.45.39_PM.jpeg');
 }
 
+.before\:bg-\[url\(\'\/\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('/');
+}
+
+.before\:bg-\[url\(\'\/WhatsApp_Image_2026-01-28_at_1\.45\.39_PM\.jpeg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('/WhatsApp_Image_2026-01-28_at_1.45.39_PM.jpeg');
+}
+
 .before\:bg-cover::before {
   content: var(--tw-content);
   background-size: cover;
 }
 
+.before\:bg-contain::before {
+  content: var(--tw-content);
+  background-size: contain;
+}
+
+.before\:bg-\[length\:80\%_80\%\]::before {
+  content: var(--tw-content);
+  background-size: 80% 80%;
+}
+
 .before\:bg-center::before {
   content: var(--tw-content);
   background-position: center;
+}
+
+.before\:bg-no-repeat::before {
+  content: var(--tw-content);
+  background-repeat: no-repeat;
 }
 
 .before\:shadow-md::before {
@@ -1055,4 +1115,14 @@ body {
 .peer:checked ~ .peer-checked\:before\:bg-\[url\(\'WhatsApp_Image_2026-01-28_at_1\.45\.40_PM\.jpeg\'\)\]::before {
   content: var(--tw-content);
   background-image: url('WhatsApp_Image_2026-01-28_at_1.45.40_PM.jpeg');
+}
+
+.peer:checked ~ .peer-checked\:before\:bg-\[url\(\'\/\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('/');
+}
+
+.peer:checked ~ .peer-checked\:before\:bg-\[url\(\'\/WhatsApp_Image_2026-01-28_at_1\.45\.40_PM\.jpeg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('/WhatsApp_Image_2026-01-28_at_1.45.40_PM.jpeg');
 }
