@@ -602,6 +602,14 @@ video {
   margin: 0px;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -712,6 +720,11 @@ video {
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+
+.border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity, 1));
 }
 
 .bg-slate-600 {
@@ -834,9 +847,44 @@ body {
   top: -3px;
 }
 
+.before\:top-\[-px\]::before {
+  content: var(--tw-content);
+  top: -px;
+}
+
+.before\:top-\[-4px\]::before {
+  content: var(--tw-content);
+  top: -4px;
+}
+
+.before\:top-\[-2px\]::before {
+  content: var(--tw-content);
+  top: -2px;
+}
+
+.before\:top-\[-1px\]::before {
+  content: var(--tw-content);
+  top: -1px;
+}
+
+.before\:top-\[-0px\]::before {
+  content: var(--tw-content);
+  top: -0px;
+}
+
+.before\:top-\[-5px\]::before {
+  content: var(--tw-content);
+  top: -5px;
+}
+
 .before\:z-10::before {
   content: var(--tw-content);
   z-index: 10;
+}
+
+.before\:box-border::before {
+  content: var(--tw-content);
+  box-sizing: border-box;
 }
 
 .before\:h-\[34px\]::before {
@@ -874,6 +922,38 @@ body {
   border-radius: 9999px;
 }
 
+.before\:border-\[3px\]::before {
+  content: var(--tw-content);
+  border-width: 3px;
+}
+
+.before\:border-\[5px\]::before {
+  content: var(--tw-content);
+  border-width: 5px;
+}
+
+.before\:border-\[45px\]::before {
+  content: var(--tw-content);
+  border-width: 45px;
+}
+
+.before\:border-\[4px\]::before {
+  content: var(--tw-content);
+  border-width: 4px;
+}
+
+.before\:border-black::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
+.before\:border-\[\#050D24\]::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(5 13 36 / var(--tw-border-opacity, 1));
+}
+
 .before\:bg-green-400::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -889,6 +969,11 @@ body {
 .before\:bg-\[url\(\'https\:\/\/placehold\.co\/34x34\/4ade80\/000000\?text\=Man\'\)\]::before {
   content: var(--tw-content);
   background-image: url('https://placehold.co/34x34/4ade80/000000?text=Man');
+}
+
+.before\:bg-\[url\(\'WhatsApp_Image_2026-01-28_at_1\.45\.39_PM\.jpeg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('WhatsApp_Image_2026-01-28_at_1.45.39_PM.jpeg');
 }
 
 .before\:bg-cover::before {
@@ -911,6 +996,13 @@ body {
 .before\:transition-transform::before {
   content: var(--tw-content);
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.before\:transition-all::before {
+  content: var(--tw-content);
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -958,4 +1050,9 @@ body {
 .peer:checked ~ .peer-checked\:before\:bg-\[url\(\'https\:\/\/placehold\.co\/34x34\/4ade80\/000000\?text\=Girl\'\)\]::before {
   content: var(--tw-content);
   background-image: url('https://placehold.co/34x34/4ade80/000000?text=Girl');
+}
+
+.peer:checked ~ .peer-checked\:before\:bg-\[url\(\'WhatsApp_Image_2026-01-28_at_1\.45\.40_PM\.jpeg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('WhatsApp_Image_2026-01-28_at_1.45.40_PM.jpeg');
 }
