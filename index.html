@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/output.css" rel="stylesheet">
-  <title>Tailwind Toggle - Custom Border Color</title>
+  <title>Tailwind Toggle - Image Fixed</title>
 </head>
 
 <body class="flex items-center justify-center min-h-screen bg-[#050D24]">
@@ -25,13 +25,17 @@
         before:h-[33px]
         before:w-[33px]
         before:rounded-full
-        before:bg-[#06B050]
         
-        /* THE SPECIFIC BORDER COLOR ADDED HERE */
+        /* 1. Moved color here and added bg-no-repeat */
+        before:bg-[#06B050]
+        before:bg-no-repeat
+        
+        /* 2. Added Knob Border */
         before:border-[4px] before:border-[#050D24]
         before:box-border
 
-        before:bg-[url('/WhatsApp Image 2026-01-28 at 1.45.39 PM.jpeg')]
+        /* 3. Encoded spaces in URL for better compatibility */
+        before:bg-[url('/WhatsApp%20Image%202026-01-28%20at%201.45.39%20PM.jpeg')]
         before:bg-cover
         before:bg-center
         before:left-[-4px]
@@ -42,7 +46,8 @@
         before:z-10
 
         peer-checked:before:translate-x-[32px]
-        peer-checked:before:bg-[url('/WhatsApp Image 2026-01-28 at 1.45.40 PM.jpeg')]
+        /* 4. Encoded spaces in URL here too */
+        peer-checked:before:bg-[url('/WhatsApp%20Image%202026-01-28%20at%201.45.40%20PM.jpeg')]
       "
     ></span>
   </label>
