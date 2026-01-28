@@ -594,8 +594,20 @@ video {
   bottom: 0.75rem;
 }
 
+.left-\[-3px\] {
+  left: -3px;
+}
+
+.top-\[-4px\] {
+  top: -4px;
+}
+
 .z-\[2\] {
   z-index: 2;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-0 {
@@ -622,6 +634,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -634,6 +650,10 @@ video {
   height: 33px;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -644,6 +664,14 @@ video {
 
 .w-\[34px\] {
   width: 34px;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-\[33px\] {
+  width: 33px;
 }
 
 .transform {
@@ -727,6 +755,11 @@ video {
   border-color: rgb(17 24 39 / var(--tw-border-opacity, 1));
 }
 
+.border-\[\#050D24\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(5 13 36 / var(--tw-border-opacity, 1));
+}
+
 .bg-slate-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
@@ -765,6 +798,11 @@ video {
   background-color: ;
 }
 
+.bg-\[\#06B050\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 176 80 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[url\(\'WhatsApp_Image_2026-01-28_at_1\.45\.39_PM\.jpeg\'\)\] {
   background-image: url('WhatsApp_Image_2026-01-28_at_1.45.39_PM.jpeg');
 }
@@ -775,6 +813,15 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-2 {
@@ -802,6 +849,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -816,6 +869,12 @@ video {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1021,6 +1080,11 @@ body {
   background-image: url('/WhatsApp_Image_2026-01-28_at_1.45.39_PM.jpeg');
 }
 
+.before\:bg-\[url\(\'\/WhatsApp\%20Image\%202026-01-28\%20at\%201\.45\.39\%20PM\.jpeg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('/WhatsApp%20Image%202026-01-28%20at%201.45.39%20PM.jpeg');
+}
+
 .before\:bg-cover::before {
   content: var(--tw-content);
   background-size: cover;
@@ -1077,6 +1141,14 @@ body {
   content: var(--tw-content);
 }
 
+.peer:checked ~ .peer-checked\:block {
+  display: block;
+}
+
+.peer:checked ~ .peer-checked\:hidden {
+  display: none;
+}
+
 .peer:checked ~ .peer-checked\:translate-x-\[32px\] {
   --tw-translate-x: 32px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1125,4 +1197,9 @@ body {
 .peer:checked ~ .peer-checked\:before\:bg-\[url\(\'\/WhatsApp_Image_2026-01-28_at_1\.45\.40_PM\.jpeg\'\)\]::before {
   content: var(--tw-content);
   background-image: url('/WhatsApp_Image_2026-01-28_at_1.45.40_PM.jpeg');
+}
+
+.peer:checked ~ .peer-checked\:before\:bg-\[url\(\'\/WhatsApp\%20Image\%202026-01-28\%20at\%201\.45\.40\%20PM\.jpeg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('/WhatsApp%20Image%202026-01-28%20at%201.45.40%20PM.jpeg');
 }
