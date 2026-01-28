@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/output.css" rel="stylesheet">
-  <title>Tailwind Toggle</title>
+  <title>Tailwind Toggle - Custom Border Color</title>
 </head>
 
-<body class="flex items-center justify-center min-h-screen bg-gray-100 gap-6 bg-[#050D24]">
+<body class="flex items-center justify-center min-h-screen bg-[#050D24]">
   <label class="relative inline-block w-[60px] h-[33px]">
     <input type="checkbox" class="peer sr-only" />
     <span
@@ -26,18 +26,23 @@
         before:w-[33px]
         before:rounded-full
         before:bg-[#06B050]
-        before:bg-[url('https://placehold.co/34x34/4ade80/000000?text=Man')]
+        
+        /* THE SPECIFIC BORDER COLOR ADDED HERE */
+        before:border-[3px] before:border-[#050D24]
+        before:box-border
+
+        before:bg-[url('WhatsApp_Image_2026-01-28_at_1.45.39_PM.jpeg')]
         before:bg-cover
         before:bg-center
         before:left-[-3px]
-        before:top-[-3px]
-        before:transition-transform
+        before:top-[-4px]
+        before:transition-all
         before:duration-300
         before:shadow-md
         before:z-10
 
         peer-checked:before:translate-x-[32px]
-        peer-checked:before:bg-[url('https://placehold.co/34x34/4ade80/000000?text=Girl')]
+        peer-checked:before:bg-[url('WhatsApp_Image_2026-01-28_at_1.45.40_PM.jpeg')]
       "
     ></span>
   </label>
